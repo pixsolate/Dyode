@@ -209,7 +209,7 @@ const TobBar = ({ location, width }) => {
           <Button className={classes.searchButton}>Go</Button>
         </Box>
       )}
-      {showMenuAble && (
+      {showMenuAble && width > 600 &&(
         <DeskTopMenu location={location.pathname} width={width} />
       )}
     </Box>
